@@ -1,0 +1,312 @@
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* COLOR PALETTE */
+:root {
+  --pink: #f8e5df;
+  --light-pink: #fff6f2;
+  --rose: #c9827f;
+  --dark-rose: #995b58;
+  --gold: #bd8a37;
+  --light-gold: #e7c17a;
+  --dark-gold: #79501b;
+  --brown: #39251b;
+  --text: #4a3028;
+  --white: #fffdfb;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE */
+body {
+  min-height: 100vh;
+  padding: 35px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(
+      circle at top,
+      #fff7f2 0%,
+      var(--pink) 55%,
+      #f2d3c9 100%
+    );
+  color: var(--text);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 100%;
+  max-width: 440px;
+  padding: 35px 28px;
+  text-align: center;
+  background: rgba(255, 253, 251, 0.76);
+  border: 1px solid rgba(189, 138, 55, 0.35);
+  border-radius: 24px;
+  box-shadow:
+    0 15px 45px rgba(100, 55, 35, 0.10),
+    inset 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* LOGO */
+.logo-container {
+  width: 165px;
+  height: 165px;
+  margin: 0 auto 22px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid var(--light-gold);
+  box-shadow: 0 5px 18px rgba(121, 80, 27, 0.18);
+  background: var(--pink);
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BRAND DETAILS */
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--dark-gold);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(30px, 8vw, 39px);
+  line-height: 1.05;
+  font-weight: 700;
+  color: var(--brown);
+}
+
+.tagline {
+  margin-top: 13px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: var(--dark-gold);
+}
+
+.tagline span {
+  color: var(--rose);
+  padding: 0 3px;
+}
+
+/* DECORATIVE LINE */
+.gold-line {
+  width: 90px;
+  height: 1px;
+  margin: 23px auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--gold),
+    transparent
+  );
+}
+
+/* DESCRIPTION */
+.description {
+  max-width: 300px;
+  margin: 0 auto 30px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #755b50;
+}
+
+/* SOCIAL SECTION */
+.social-section {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.connect-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--dark-gold);
+  margin-bottom: 6px;
+}
+
+/* SOCIAL BUTTONS */
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 70px;
+  padding: 12px 17px;
+  text-align: left;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--white);
+  border: 1px solid rgba(189, 138, 55, 0.4);
+  border-radius: 13px;
+  box-shadow: 0 4px 12px rgba(80, 48, 30, 0.04);
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  background: #fff8f2;
+  box-shadow: 0 8px 18px rgba(121, 80, 27, 0.12);
+}
+
+.social-link:focus-visible {
+  outline: 2px solid var(--dark-gold);
+  outline-offset: 3px;
+}
+
+/* SOCIAL ICONS */
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--dark-gold);
+  background: #f9e9e0;
+  border: 1px solid rgba(189, 138, 55, 0.3);
+}
+
+.tiktok-icon {
+  font-size: 28px;
+}
+
+.whatsapp-icon {
+  font-size: 26px;
+}
+
+/* BUTTON TEXT */
+.link-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link-text strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--brown);
+}
+
+.link-text small {
+  font-size: 10px;
+  color: #92766a;
+}
+
+/* ARROW */
+.arrow {
+  margin-left: auto;
+  font-size: 21px;
+  color: var(--gold);
+}
+
+/* LOCATION */
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin: 30px auto 0;
+  color: var(--brown);
+}
+
+.location-icon {
+  font-size: 30px;
+  color: var(--dark-gold);
+}
+
+.location p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 27px;
+}
+
+.footer-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 14px;
+}
+
+.footer-decoration span:not(.heart) {
+  width: 65px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.heart {
+  color: var(--dark-rose);
+  font-size: 28px;
+}
+
+footer p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--dark-rose);
+  margin-bottom: 10px;
+}
+
+footer small {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #92766a;
+}
+
+/* MOBILE */
+@media (max-width: 380px) {
+  .container {
+    padding: 30px 17px;
+  }
+
+  .logo-container {
+    width: 140px;
+    height: 140px;
+  }
+
+  .social-link {
+    padding: 11px;
+    gap: 10px;
+  }
+
+  .link-text strong {
+    font-size: 18px;
+  }
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
